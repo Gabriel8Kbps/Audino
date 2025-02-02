@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "c:\Users\Administrador\Desktop\Audino-redu-o\Audino\audino.h"
+#include "c:\Users\Administrador\Desktop\Audino-redu-o\Audino\audino.h" //Diretório da biblioteca
 
 #define SD_ChipSelectPin 4
 
