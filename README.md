@@ -32,9 +32,10 @@ Vozes/2.wav  (Número 2)
 |-------------------------|--------------|
 | VCC                     | 5V           |
 | GND                     | GND          |
-| TX                      | RX           |
-| RX                      | TX           |
-| SPK1, SPK2              | Alto-falante |
+| MISO                    | 13           |
+| MOSI                    | 12           |
+| SCK                     | 11           |
+| CS                      | 9            |
 
 ## Bibliotecas Necessárias
 Instale as seguintes bibliotecas através da Arduino IDE.
