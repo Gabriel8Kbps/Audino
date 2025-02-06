@@ -89,7 +89,8 @@ void narrador(int indice){
 }
 
 /** Função umd()
-* - A função umd pprocessa um valor (string) na posição 0 do vetor referente a casa das unidades, com base no caractere atual (valor[c]), chamar a função narrador para reproduzir um arquivo de áudio específico.
+* - A função umd pprocessa um valor (string) na posição 0 do vetor referente a casa das unidades, 
+* - com base no caractere atual (valor[c]), chamar a função narrador para reproduzir um arquivo de áudio específico.
  * @param[in] char valor[]
  * @param[out] void
 */
@@ -109,7 +110,8 @@ void umd(char valor[]) {
 }
 
 /** Função doisd()
-* - A função doisd processa um valor (string) na posição 1 do vetor referente a casa das dezenas, com base no caractere atual (valor[c]), chamar a função narrador para reproduzir um arquivo de áudio específico.
+* - A função doisd processa um valor (string) na posição 1 do vetor referente a casa das dezenas, 
+* - com base no caractere atual (valor[c]), chamar a função narrador para reproduzir um arquivo de áudio específico.
  * @param[in] char valor[]
  * @param[out] void
 */
@@ -157,7 +159,8 @@ void doisd(char valor[]) {
 }
 
 /** Função tresd()
-* - A função tresd processa um valor (string) na posição 2 do vetor referente a casa das centenas, com base no caractere atual (valor[c]), chamar a função narrador para reproduzir um arquivo de áudio específico.
+* - A função tresd processa um valor (string) na posição 2 do vetor referente a casa das centenas, 
+* - com base no caractere atual (valor[c]), chamar a função narrador para reproduzir um arquivo de áudio específico.
  * @param[in] char valor[]
  * @param[out] void
 */
@@ -177,7 +180,8 @@ void tresd(char valor[]) {
 }
 
 /** Função quatrod()
-* - A função quatrod processa um valor (string) na posição 3 do vetor referente a casa das unidades de milhar, com base no caractere atual (valor[c]), chamar a função narrador para reproduzir um arquivo de áudio específico.
+* - A função quatrod processa um valor (string) na posição 3 do vetor referente a casa das unidades de milhar, 
+* - com base no caractere atual (valor[c]), chamar a função narrador para reproduzir um arquivo de áudio específico.
  * @param[in] char valor[]
  * @param[out] void
 */
@@ -197,7 +201,8 @@ void quatrod(char valor[]) {
 }
 
 /** Função cincod()
-* - A função cincod processa um valor (string) na posição 4 do vetor referente a casa das dezenas de milhar, com base no caractere atual (valor[c]), chamar a função narrador para reproduzir um arquivo de áudio específico.
+* - A função cincod processa um valor (string) na posição 4 do vetor referente a casa das dezenas de milhar, 
+* - com base no caractere atual (valor[c]), chamar a função narrador para reproduzir um arquivo de áudio específico.
  * @param[in] char valor[]
  * @param[out] void
 */
@@ -258,9 +263,9 @@ void inverter(char dados[20]) {//funcao inverter string
         }
 }
 
-/** Função extenso()
-* - A função extenso converte um número representado como uma string em sua forma por extenso, utilizando funções auxiliares para processar cada dígito ou grupo de dígitos. 
-* - Ela inverte a string para facilitar o processamento das unidades, dezenas, centenas, etc., e chama a função narrador para reproduzir os áudios correspondentes.
+/** Função extenso() 
+* - Ela inverte a string para facilitar o processamento das unidades, dezenas, centenas, etc., 
+* - e chama a função narrador para reproduzir os áudios correspondentes.
  * @param[in] char valor[]
  * @param[out] void
 */
