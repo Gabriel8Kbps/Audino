@@ -73,6 +73,11 @@ const int *wav_delay[] = {
   700,     800,       800,        800,       800,       800,         300,          800,       800,      700,      1000,
   1000,    1000,      1200,       1400,      1271,      662,         300, };
 
+/** Função narrador()
+* - A função narrador reproduz um arquivo de áudio no formato WAV, com base em um índice fornecido como argumento.
+ * @param[in] int indice
+ * @param[out] void
+*/
 
 void narrador(int indice){
 
@@ -82,6 +87,12 @@ void narrador(int indice){
   delay(wav_delay[indice]);
 
 }
+
+/** Função umd()
+* - A função umd pprocessa um valor (string) com apenas 1 algarismo e, com base no caractere atual (valor[c]), chamar a função narrador para reproduzir um arquivo de áudio específico.
+ * @param[in] char valor[]
+ * @param[out] void
+*/
 
 void umd(char valor[]) {
           switch(valor[c]){
@@ -96,6 +107,12 @@ void umd(char valor[]) {
                            case '9':if(cont>=2)narrador(39);narrador(9);break;
                     }
 }
+
+/** Função doisd()
+* - A função doisd processa um valor (string) com dois algarismos e, com base no caractere atual (valor[c]), chamar a função narrador para reproduzir um arquivo de áudio específico.
+ * @param[in] char valor[]
+ * @param[out] void
+*/
 
 void doisd(char valor[]) {
          if(valor[c]=='1'){
@@ -139,6 +156,12 @@ void doisd(char valor[]) {
         }
 }
 
+/** Função tresd()
+* - A função tresd processa um valor (string) com três algarismos e, com base no caractere atual (valor[c]), chamar a função narrador para reproduzir um arquivo de áudio específico.
+ * @param[in] char valor[]
+ * @param[out] void
+*/
+
 void tresd(char valor[]) {
            switch(valor[c]){//se for zero nao faz nada
                               case '1':if(valor[c-1]=='0'&&valor[c-2]=='0')narrador(28); else narrador(29);break;//verifica caso dgito seja um
@@ -153,6 +176,12 @@ void tresd(char valor[]) {
               }
 }
 
+/** Função quatrod()
+* - A função quatrod processa um valor (string) com quatro algarismos e, com base no caractere atual (valor[c]), chamar a função narrador para reproduzir um arquivo de áudio específico.
+ * @param[in] char valor[]
+ * @param[out] void
+*/
+
 void quatrod(char valor[]) {
              switch(valor[c]){//se for zero nao faz nada
                               case '1':if(cont>=5)narrador(39);narrador(38);break;//verifica caso dgito seja um
@@ -166,6 +195,12 @@ void quatrod(char valor[]) {
                               case '9':if(cont>=5)narrador(39);narrador(9);narrador(38);break;
               }
 }
+
+/** Função cincod()
+* - A função cincod processa um valor (string) com três algarismos e, com base no caractere atual (valor[c]), chamar a função narrador para reproduzir um arquivo de áudio específico.
+ * @param[in] char valor[]
+ * @param[out] void
+*/
 
 void cincod(char valor[]) {
         if(valor[c-1]=='0'&&valor[c]=='1'){
@@ -201,6 +236,12 @@ void cincod(char valor[]) {
             }
 }
 
+/** Função inverter()
+* - A função inverter tem como objetivo inverter as posições de uma string (um array de caracteres). 
+ * @param[in] char dados[20]
+ * @param[out] void
+*/
+
 void inverter(char dados[20]) {//funcao inverter string
 
       char auxc;
@@ -215,7 +256,14 @@ void inverter(char dados[20]) {//funcao inverter string
           dados[bc]=auxc;
 
         }
-    }
+}
+
+/** Função extenso()
+* - A função extenso converte um número representado como uma string em sua forma por extenso, utilizando funções auxiliares para processar cada dígito ou grupo de dígitos. 
+* - Ela inverte a string para facilitar o processamento das unidades, dezenas, centenas, etc., e chama a função narrador para reproduzir os áudios correspondentes.
+ * @param[in] char valor[]
+ * @param[out] void
+*/
 
 void extenso(char valor[]) {
   cont = strlen(valor);
@@ -245,6 +293,13 @@ void extenso(char valor[]) {
     }
   }
 }
+
+/** Função sd_wav_player()
+* - A função sd_wav_player configura e inicializa um player de áudio que reproduz arquivos WAV a partir de um cartão SD. 
+* - Ela define o pino do alto-falante, inicializa o cartão SD e ajusta a qualidade e o volume do áudio.
+ * @param[in] int speaker_pin, int SD_pin, int qualidade, int volume, int serial_begin
+ * @param[out] void
+*/
 
 void sd_wav_player(int speaker_pin, int SD_pin, int qualidade, int volume, int serial_begin){
 
