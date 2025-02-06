@@ -28,13 +28,13 @@ Vozes/2.wav  (Número 2)
 ```
 
 ## Conexões
-| DFPlayer Mini | Arduino |
-|--------------|---------|
-| VCC          | 5V      |
-| GND          | GND     |
-| TX           | RX  |
-| RX           | TX  |
-| SPK1, SPK2   | Alto-falante |
+| Módulo Cartão Leitor SD | Arduino      |
+|-------------------------|--------------|
+| VCC                     | 5V           |
+| GND                     | GND          |
+| TX                      | RX           |
+| RX                      | TX           |
+| SPK1, SPK2              | Alto-falante |
 
 ## Bibliotecas Necessárias
 Instale as seguintes bibliotecas através da Arduino IDE.
