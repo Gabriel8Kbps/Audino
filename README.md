@@ -20,10 +20,10 @@ Este projeto permite que um Arduino enuncie números de 0 a 99999 utilizando um 
 - Resistores e jumpers para conexões
 
 ## Estrutura dos Arquivos de Áudio
-Os arquivos de áudio devem estar armazenados no cartão microSD dentro da pasta `Vozes/`. Exemplo:
+Os arquivos de áudio devem estar armazenados no cartão microSD. Exemplo:
 ```
-Vozes/1.wav  (Número 1)
-Vozes/2.wav  (Número 2)
+/1.wav  (Número 1)
+/2.wav  (Número 2)
 ...
 ```
 
