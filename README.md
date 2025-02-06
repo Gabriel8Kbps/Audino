@@ -8,6 +8,8 @@ Este projeto permite que um Arduino enuncie números de 0 a 99999 utilizando um 
 - Reproduz arquivos de áudio .wav armazenados em um cartão microSD.
 - Permite a narração de números individuais por meio da reprodução dos arquivos correspondentes.
 
+
+## Modelo
   ![image](https://github.com/user-attachments/assets/0bb20ca4-c35a-43a8-bfdc-6a401ba2618d)
 
 ## Componentes Utilizados
