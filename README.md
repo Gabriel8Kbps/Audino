@@ -2,7 +2,7 @@
 
 # Projeto: Narração de Números com Arduino
 
-Este projeto permite que um Arduino reproduza arquivos de áudio correspondentes a números utilizando um módulo DFPlayer Mini.
+Este projeto permite que um Arduino enuncie números de 0 a 99999 utilizando um Módulo Cartão Leitor SD.
 
 ## Funcionalidades
 - Reproduz arquivos de áudio .wav armazenados em um cartão microSD.
@@ -12,7 +12,7 @@ Este projeto permite que um Arduino reproduza arquivos de áudio correspondentes
 
 ## Componentes Utilizados
 - Arduino (Uno, Mega, etc.)
-- Módulo DFPlayer Mini
+- Módulo Cartão Leitor SD
 - Cartão microSD (formatado em FAT32) com arquivos de áudio
 - Alto-falante
 - Resistores e jumpers para conexões
