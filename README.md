@@ -29,13 +29,17 @@ Vozes/2.wav  (Número 2)
 
 ## Conexões
 | Módulo Cartão Leitor SD | Arduino      |
-|-------------------------|--------------|
-| VCC                     | 5V           |
-| GND                     | GND          |
-| MISO                    | 13           |
-| MOSI                    | 12           |
-| SCK                     | 11           |
-| CS                      | 9            |
+|-------------------------|--------------|         
+| VCC                     | 5V           |         
+| GND                     | GND          |         
+| MISO                    | 12           |         
+| MOSI                    | 11           |         
+| SCK                     | 13           |         
+| CS                      | 4            |
+|-------------------------|--------------|       
+| Speaker                 | 9            |
+ 
+ 
 
 ## Bibliotecas Necessárias
 Instale as seguintes bibliotecas através da Arduino IDE.
