@@ -36,6 +36,7 @@ Vozes/2.wav  (Número 2)
 | MOSI                    | 11           |         
 | SCK                     | 13           |         
 | CS                      | 4            |    
+
 | Speaker                 | 9            |
  
  
