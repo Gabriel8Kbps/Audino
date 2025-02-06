@@ -89,7 +89,7 @@ void narrador(int indice){
 }
 
 /** Função umd()
-* - A função umd pprocessa um valor (string) com apenas 1 algarismo e, com base no caractere atual (valor[c]), chamar a função narrador para reproduzir um arquivo de áudio específico.
+* - A função umd pprocessa um valor (string) na posição 0 do vetor, com base no caractere atual (valor[c]), chamar a função narrador para reproduzir um arquivo de áudio específico.
  * @param[in] char valor[]
  * @param[out] void
 */
