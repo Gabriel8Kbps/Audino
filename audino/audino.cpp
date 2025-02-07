@@ -2,7 +2,7 @@
 
   Audino.h
 
-  Autor: Eng. Gabriel de Jesus dos Santos Costa
+  Autores: Gabriel de Jesus dos Santos Costa e José Henrique Barbosa Pena
   Fevereiro de 2025
 
 */
