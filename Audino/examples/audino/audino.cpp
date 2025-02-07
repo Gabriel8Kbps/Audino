@@ -1,16 +1,17 @@
 /*
 
-  Audino.h
+  AUDINO.h
 
   Autor: Eng. Gabriel de Jesus dos Santos Costa
   Fevereiro de 2025
 
 */
-
-#include <Audino.h>
+#include "audino.h"
 #include <avr/pgmspace.h>
 #include <TMRpcm.h>
+#include <stdio.h>
 #include <SD.h>
+#define SD_ChipSelectPin 4
 
 TMRpcm wav; //Criando objeto wav
 
@@ -59,6 +60,7 @@ static const char _800[] PROGMEM = "800.wav";
 static const char _900[] PROGMEM = "900.wav";
 static const char _1000[] PROGMEM = "1000.wav";
 
+
 const char *wav_table[] = {
   _0,      _1,        _2,         _3,        _4,        _5,          _6,            _7,         _8,        _9,        _10,
   _11,     _12,       _13,        _14,       _15,       _16,         _17,           _18,        _19,       _20,       _30,
@@ -77,8 +79,7 @@ const int *wav_delay[] = {
  * @param[out] void
 */
 
-
-void Audino::narrador(int indice){
+void narrador(int indice){
 
   char wavFile[40];
   strcpy_P(wavFile, wav_table[indice]);
@@ -94,7 +95,7 @@ void Audino::narrador(int indice){
  * @param[out] void
 */
 
-void Audino::umd(char valor[]) {
+void umd(char valor[]) {
           switch(valor[c]){
                            case '1':if(cont>=2)narrador(39);narrador(1);break;//verifica caso dgito seja um
                            case '2':if(cont>=2)narrador(39);narrador(2);break;
@@ -115,7 +116,7 @@ void Audino::umd(char valor[]) {
  * @param[out] void
 */
 
-void Audino::doisd(char valor[]) {
+void doisd(char valor[]) {
          if(valor[c]=='1'){
                     switch(valor[c-1]){
                               case '0':c--;if(cont>=3)narrador(39);narrador(10);break;
@@ -164,7 +165,7 @@ void Audino::doisd(char valor[]) {
  * @param[out] void
 */
 
-void Audino::tresd(char valor[]) {
+void tresd(char valor[]) {
            switch(valor[c]){//se for zero nao faz nada
                               case '1':if(valor[c-1]=='0'&&valor[c-2]=='0')narrador(28); else narrador(29);break;//verifica caso dgito seja um
                               case '2':if(cont>=4);narrador(30);break;
@@ -185,7 +186,7 @@ void Audino::tresd(char valor[]) {
  * @param[out] void
 */
 
-void Audino::quatrod(char valor[]) {
+void quatrod(char valor[]) {
              switch(valor[c]){//se for zero nao faz nada
                               case '1':if(cont>=5)narrador(39);narrador(38);break;//verifica caso dgito seja um
                               case '2':if(cont>=5)narrador(39);narrador(2);narrador(38);break;
@@ -206,7 +207,7 @@ void Audino::quatrod(char valor[]) {
  * @param[out] void
 */
 
-void Audino::cincod(char valor[]) {
+void cincod(char valor[]) {
         if(valor[c-1]=='0'&&valor[c]=='1'){
             switch(valor[c]){
                               case '1':narrador(10);narrador(38);break;//verifica caso dgito seja um
@@ -246,7 +247,7 @@ void Audino::cincod(char valor[]) {
  * @param[out] void
 */
 
-void Audino::inverter(char dados[20]) {//funcao inverter string
+void inverter(char dados[20]) {//funcao inverter string
 
       char auxc;
       int ac,bc,contc;
@@ -269,7 +270,7 @@ void Audino::inverter(char dados[20]) {//funcao inverter string
  * @param[out] void
 */
 
-void Audino::extenso(char valor[]) {
+void extenso(char valor[]) {
   cont = strlen(valor);
   inverter(valor);
 
@@ -305,7 +306,7 @@ void Audino::extenso(char valor[]) {
  * @param[out] void
 */
 
-void Audino::sd_wav_player(int speaker_pin, int SD_pin, int qualidade, int volume, int serial_begin){
+void sd_wav_player(int speaker_pin, int SD_pin, int qualidade, int volume, int serial_begin){
 
     Serial.begin(serial_begin);
     wav.speakerPin = speaker_pin; pinMode(SD_pin,OUTPUT);

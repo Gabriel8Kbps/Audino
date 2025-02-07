@@ -10,14 +10,12 @@
 #ifndef AUDINO_H
 #define AUDINO_H
 
+#include "audino.cpp"
 #include <stdio.h>
-#include <avr/pgmspace.h>
-#include <TMRpcm.h>
-#include <SD.h>
 
 #define SD_ChipSelectPin 4
 
-class Audino {
+class audino_n {
   public:
     void narrador(int indice);
     void doisd(char valor[]);
@@ -31,9 +29,8 @@ class Audino {
   private:
     int c; // Variável para controle de índice
     int cont; // Variável para controle de contagem
-    //TMRpcm wav;  Objeto para reprodução de áudio
+    TMRpcm wav; // Objeto para reprodução de áudio
     const char* wav_table[40]; // Tabela de nomes de arquivos WAV
-    char entrada[10];
     int wav_delay[40]; // Tabela de delays para cada arquivo WAV
 };
 

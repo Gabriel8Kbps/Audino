@@ -17,7 +17,7 @@
 
 #define SD_ChipSelectPin 4
 
-class Audino {
+class audino {
   public:
     void narrador(int indice);
     void doisd(char valor[]);
@@ -31,9 +31,8 @@ class Audino {
   private:
     int c; // Variável para controle de índice
     int cont; // Variável para controle de contagem
-    //TMRpcm wav;  Objeto para reprodução de áudio
+    TMRpcm wav; // Objeto para reprodução de áudio
     const char* wav_table[40]; // Tabela de nomes de arquivos WAV
-    char entrada[10];
     int wav_delay[40]; // Tabela de delays para cada arquivo WAV
 };
 

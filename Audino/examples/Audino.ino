@@ -1,6 +1,6 @@
 #include <stdio.h>
-//#include <Audino.h> //Diretório da biblioteca...
-#include "c:\Users\Administrador\Documents\Arduino\libraries\Audino\Audino.h"
+#include <audino.h> //Diretório da biblioteca...
+
 #define SD_ChipSelectPin 4
 
 void loop(){
@@ -16,6 +16,7 @@ void loop(){
  }
  
 void setup() {
+
     sd_wav_player(9, 4, 1, 5, 9600);
     Serial.println("Digite um número e pressione ENTER:");
  }
