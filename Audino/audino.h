@@ -7,8 +7,8 @@
 
 */
 
-#ifndef _AUDINO_H
-#define _AUDINO_H
+#ifndef AUDINO_H
+#define AUDINO_H
 
 #include <stdio.h>
 #include <avr/pgmspace.h>
