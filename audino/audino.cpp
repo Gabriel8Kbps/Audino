@@ -1,16 +1,19 @@
 /*
 
-  AUDINO.h
+  Audino.h
 
-  Autor: Eng. Gabriel de Jesus dos Santos Costa
+  Autores: Gabriel de Jesus dos Santos Costa e José Henrique Barbosa Pena
   Fevereiro de 2025
 
 */
-#include "audino.h"
+
+#include <audino.h>
 #include <avr/pgmspace.h>
-#include <TMRpcm.h>
-#include <stdio.h>
 #include <SD.h>
+#include <TMRpcm.h>
+#include <pcmConfig.h>
+#include <pcmRF.h>
+
 #define SD_ChipSelectPin 4
 
 TMRpcm wav; //Criando objeto wav
@@ -60,7 +63,6 @@ static const char _800[] PROGMEM = "800.wav";
 static const char _900[] PROGMEM = "900.wav";
 static const char _1000[] PROGMEM = "1000.wav";
 
-
 const char *wav_table[] = {
   _0,      _1,        _2,         _3,        _4,        _5,          _6,            _7,         _8,        _9,        _10,
   _11,     _12,       _13,        _14,       _15,       _16,         _17,           _18,        _19,       _20,       _30,
@@ -78,6 +80,7 @@ const int *wav_delay[] = {
  * @param[in] int indice
  * @param[out] void
 */
+
 
 void narrador(int indice){
 

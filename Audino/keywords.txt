@@ -1,4 +1,0 @@
-Audino	KEYWORD1
-narrador	KEYWORD2
-sd_wav_player	KEYWORD2
-extenso	KEYWORD2
