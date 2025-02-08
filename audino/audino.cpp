@@ -21,6 +21,11 @@ TMRpcm wav; //Criando objeto wav
 int cont = 0,c;
 char entrada[10];
 
+static const char _V[] PROGMEM = "Volts.wav";
+static const char _A[] PROGMEM = "Amperes.wav";
+static const char _k[] PROGMEM = "kilo.wav";
+static const char _menos[] PROGMEM = "menos.wav";
+static const char _m[] PROGMEM = "mili.wav";
 static const char _Ei[] PROGMEM = "Ei.wav";
 static const char _e[] PROGMEM = "e.wav";
 static const char _0[] PROGMEM = "0.wav";
@@ -67,13 +72,15 @@ const char *wav_table[] = {
   _0,      _1,        _2,         _3,        _4,        _5,          _6,            _7,         _8,        _9,        _10,
   _11,     _12,       _13,        _14,       _15,       _16,         _17,           _18,        _19,       _20,       _30,
   _40,     _50,       _60,        _70,       _80,       _90,         _100,          _101,       _200,      _300,      _400,
-  _500,    _600,      _700,       _800,      _900,      _1000,  _e, };
+  _500,    _600,      _700,       _800,      _900,      _1000,       _e,            _V,         _A,        _k,        _menos,
+  _m[]};
 
-const int *wav_delay[] = {
+  const int *wav_delay[] = {
   948,     652,       700,        500,       700,       700,         700,          700,       700,      700,       700,
   700,     700,       800,        800,       800,       900,         900,          900,       900,      500,       900,
   700,     800,       800,        800,       800,       800,         300,          800,       800,      700,      1000,
-  1000,    1000,      1200,       1400,      1271,      662,         300, };
+  1000,    1000,      1200,       1400,      1271,      662,         300,          1000       1000,      1000,    1000,
+  1000};
 
 /** Função narrador()
 * - A função narrador reproduz um arquivo de áudio no formato WAV, com base em um índice fornecido como argumento.
