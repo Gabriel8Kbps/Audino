@@ -47,6 +47,9 @@ Instale as seguintes bibliotecas através da Arduino IDE.
 #include <TMRpcm.h>
 #include <stdio.h>
 #include <SD.h>
+#include <pcmConfig.h>
+#include <pcmRF.h>
+
 ```
 
 ## Código Básico
