@@ -81,8 +81,9 @@ void setup() {
 ## Como Usar
 1. Copie os arquivos de áudio para o cartão microSD.
 2. Conecte o hardware conforme indicado.
-3. Carregue o código no Arduino.
-4. O número correspondente será narrado pelo sistema de áudio.
+3. instale a biblioteca arduino.zip. 
+4. Carregue o código no Arduino.
+5. O número correspondente será narrado pelo sistema de áudio.
 
 ## Licença
 Este projeto é de código aberto e pode ser modificado conforme necessário.
