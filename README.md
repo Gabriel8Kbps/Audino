@@ -133,6 +133,7 @@ Tabela:
     42: "kilo.wav",
     43: "menos.wav",
     44: "mili.wav",
+    45: "virgula.wav",
 ```
 Use esta tabela como guia na hora de chamar a função narrador.
 
