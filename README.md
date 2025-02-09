@@ -86,7 +86,7 @@ void setup() {
 5. O número correspondente será narrado pelo sistema de áudio.
 
 ##
-Para os alunos de Circuitos I do agostintinho:
+Tabela:
 ```cpp
     0: "0.wav",
     1: "1.wav",
@@ -134,8 +134,7 @@ Para os alunos de Circuitos I do agostintinho:
     43: "menos.wav",
     44: "mili.wav",
 ```
-Usem esta tabela como guia na hora de chamar a função narrador. 
-Boa sorte a todos.
+Use esta tabela como guia na hora de chamar a função narrador.
 
 ## Licença
 Este projeto é de código aberto e pode ser modificado conforme necessário.
