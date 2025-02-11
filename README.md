@@ -87,6 +87,7 @@ void setup() {
 
 ##
 Tabela:
+Use esta tabela como guia na hora de chamar a função narrador.
 ```cpp
     0: "0.wav",
     1: "1.wav",
@@ -135,7 +136,6 @@ Tabela:
     44: "mili.wav",
     45: "virgula.wav",
 ```
-Use esta tabela como guia na hora de chamar a função narrador.
 
 ## Licença
 Este projeto é de código aberto e pode ser modificado conforme necessário.
